@@ -16,11 +16,11 @@ Currently pursuing a PhD in Biomedical Engineering (Univ. of Coimbra), applying 
 
 ## 2. Featured Projects 🚀
 
-### PhD Project — From Copy Number Variations to Biological Networks 🧬
+### 2.1. PhD Project — From Copy Number Variations to Biological Networks 🧬
 
 **Integrating relational databases, graph theory & machine learning to decode dopaminergic and serotonergic mechanisms in autism and developmental delay.**
 
-#### From Unstructured Data to Relational and Graph Databases
+#### 2.1.1. From Unstructured Data to Relational and Graph Databases
 
 *Relational and Graph Databases for Neurodevelopmental Genetics Using SFARI Gene CNV Data*
 
@@ -71,7 +71,7 @@ All datasets and scripts are publicly available 👉 [Dataverse Repository](http
 
 ---
 
-#### Dopaminergic Networks and Diagnosis Classification in Autism Spectrum Disorder and Developmental Delay
+#### 2.1.2. Dopaminergic Networks and Diagnosis Classification in Autism Spectrum Disorder and Developmental Delay
 
 *Complex network analysis and machine learning for disentangling dopaminergic mechanisms in ASD and DD*
 

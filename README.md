@@ -111,7 +111,7 @@ We applied **complex network analysis** to SFARI CNV datasets in order to captur
 - Advances the case for **knowledge-based machine learning pipelines** in neurodevelopmental diagnoses.  
  
 **Tech Stack:**  
-`Python · scikit-learn · R · NetworkX · Gephi `
+`MySQL · Ruby · Python · scikit-learn · R · NetworkX · Gephi `
 
 **Publication:**  
 Full peer-reviewed article published in *Journal of Personalized Medicine* (Special Issue: Systems Medicine and Bioinformatics).  

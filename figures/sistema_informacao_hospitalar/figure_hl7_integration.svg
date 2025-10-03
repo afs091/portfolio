@@ -1,0 +1,40 @@
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <style>
+      .box { fill:#fff; stroke:#333; stroke-width:1.5; }
+      .title { font: bold 13px sans-serif; fill:#222; }
+      .desc { font: 11px sans-serif; fill:#444; }
+      .arrow { stroke:#333; stroke-width:1.5; marker-end:url(#arrowhead); }
+    </style>
+  </defs>
+
+  <!-- CDA Form -->
+  <rect class="box" x="30" y="100" width="180" height="80" rx="6" ry="6"/>
+  <text class="title" x="120" y="125" text-anchor="middle">Structured Form</text>
+  <text class="desc" x="120" y="145" text-anchor="middle">HL7-CDA + SNOMED-CT</text>
+
+  <!-- HL7 Builder -->
+  <rect class="box" x="250" y="100" width="180" height="80" rx="6" ry="6"/>
+  <text class="title" x="340" y="125" text-anchor="middle">HL7 Builder</text>
+  <text class="desc" x="340" y="145" text-anchor="middle">CDA to HL7 v2</text>
+
+  <!-- LIGHt Gateway -->
+  <rect class="box" x="470" y="100" width="160" height="80" rx="6" ry="6"/>
+  <text class="title" x="550" y="125" text-anchor="middle">LIGHt Gateway</text>
+  <text class="desc" x="550" y="145" text-anchor="middle">Interoperability</text>
+
+  <!-- SClinico -->
+  <rect class="box" x="670" y="100" width="180" height="80" rx="6" ry="6"/>
+  <text class="title" x="760" y="125" text-anchor="middle">SClinico Hospitalar</text>
+  <text class="desc" x="760" y="145" text-anchor="middle">Clinical Diary</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="210" y1="140" x2="250" y2="140"/>
+  <line class="arrow" x1="430" y1="140" x2="470" y2="140"/>
+  <line class="arrow" x1="630" y1="140" x2="670" y2="140"/>
+
+</svg>

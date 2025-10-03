@@ -1,0 +1,46 @@
+<svg viewBox="0 0 950 300" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <style>
+      .box { fill:#fff; stroke:#333; stroke-width:1.5; }
+      .title { font: bold 13px sans-serif; fill:#222; }
+      .desc { font: 11px sans-serif; fill:#444; }
+      .arrow { stroke:#333; stroke-width:1.5; marker-end:url(#arrowhead); }
+    </style>
+  </defs>
+
+  <!-- Step 1: Login/User Auth -->
+  <rect class="box" x="30" y="100" width="140" height="80" rx="6" ry="6"/>
+  <text class="title" x="100" y="125" text-anchor="middle">Login</text>
+  <text class="desc" x="100" y="145" text-anchor="middle">User Auth &amp; Group</text>
+
+  <!-- Step 2: Scales -->
+  <rect class="box" x="200" y="100" width="160" height="80" rx="6" ry="6"/>
+  <text class="title" x="280" y="125" text-anchor="middle">Psych. Scales</text>
+  <text class="desc" x="280" y="145" text-anchor="middle">Anxiety &amp; COVID</text>
+
+  <!-- Step 3: Content -->
+  <rect class="box" x="390" y="100" width="160" height="80" rx="6" ry="6"/>
+  <text class="title" x="470" y="125" text-anchor="middle">Guided Content</text>
+  <text class="desc" x="470" y="145" text-anchor="middle">Text / Video / Audio</text>
+
+  <!-- Step 4: Tasks -->
+  <rect class="box" x="580" y="100" width="160" height="80" rx="6" ry="6"/>
+  <text class="title" x="660" y="125" text-anchor="middle">Interactive Tasks</text>
+  <text class="desc" x="660" y="145" text-anchor="middle">MCQ - Free Text - Matching</text>
+
+  <!-- Step 5: Reflection & Save -->
+  <rect class="box" x="770" y="100" width="150" height="80" rx="6" ry="6"/>
+  <text class="title" x="845" y="125" text-anchor="middle">Reflection</text>
+  <text class="desc" x="845" y="145" text-anchor="middle">Save to Database</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="170" y1="140" x2="200" y2="140"/>
+  <line class="arrow" x1="360" y1="140" x2="390" y2="140"/>
+  <line class="arrow" x1="550" y1="140" x2="580" y2="140"/>
+  <line class="arrow" x1="740" y1="140" x2="770" y2="140"/>
+
+</svg>

@@ -285,11 +285,98 @@ Traditional documentation systems at CHUC relied on **free-text entries and stat
 
 ---
 
-### CHUC Hospital - Integration of Clinical Documentation with National Healthcare System (SClínico) 📝
+### 4. CHUC Hospital - Integration of Clinical Documentation with National Healthcare System (SClínico) 📝
+
+*Bridging structured digital documentation with the official hospital record system via HL7 and SNOMED-CT*
+
+**Highlights:**
+- Extended the **digital documentation system** (project 3) with **direct integration to SClínico Hospitalar**.  
+- Eliminated the need for clinicians to manually duplicate information into SClínico medical summaries.  
+- Designed and implemented **HL7 message generation** from structured HL7-CDA + SNOMED-CT clinical documents.  
+- Developed **LIGHt (Local Interoperability Gateway for Healthcare) integration** for message delivery.  
+- Enabled clinicians to filter and **control which observations** are pushed into SClínico diaries, ensuring relevance and compliance.  
+
+<details>
+<summary>📖 Read More</summary>
+
+**Problem:**  
+Although clinicians could fill clinical forms digitally (project 3), the lack of interoperability with *SClínico* forced them to **re-enter the same data** in medical summaries — a time‑consuming and frustrating workflow that discouraged adoption.  
+
+**Solution:**  
+- **HL7 message builder**: Transforms structured HL7‑CDA documents annotated with SNOMED‑CT into compliant HL7 messages.  
+- **Messaging module**: Handles sending of HL7 messages to the *LIGHt* gateway, CHUC’s local interoperability service.  
+- **Filtering module**: Dynamically selects which observations should be included in each HL7 message based on:  
+  - Template specifications,  
+  - Data collected in the form,  
+  - Clinical choices or regulatory requirements.  
+  → This ensures that only **relevant and clinician‑approved information** is written into SClínico clinical diaries.  
+
+**Impact:**  
+- Achieved **seamless integration** between the CHUC digital documentation platform and the official SClínico system.  
+- **Reduced duplication** and improved clinician adoption by streamlining workflows.  
+- Allowed clinicians to **retain control** over the granularity of information shared with SClínico.  
+- Paved the way for expanding structured documentation to **routine hospital workflows** at scale.  
+
+**Supporting Figures:**  
+
+![Figure – HL7 Integration Architecture](figures/sistema_informacao_hospitalar/figure_hl7_integration.svg)  
+*Architecture showing transformation of HL7‑CDA structured forms into HL7 messages and transmission via the LIGHt gateway into SClínico.*  
+
+**Tech Stack:**  
+`HL7 CDA · SNOMED‑CT · HL7 v2 Messaging · LIGHt (SNS) · ASP.NET MVC · MS SQL Server · REST Services · JavaScript · HTML/CSS`  
+
+</details>
 
 ---
 
 ### COVMind — Remote CBT (Cognitive Behavioral Therapy)/Mindfulness Platform 🧘
+
+*Supporting psychological well‑being during COVID‑19 through structured online therapy sessions*
+
+**Highlights:**
+- Collaborated with a **PhD research psychologist** from the CIBIT research group.  
+- Designed and implemented an online platform to deliver **8 interactive CBT/mindfulness sessions** for participants plus **8 control group sessions**.  
+- Built with **Django (Python), JavaScript, relational databases, and secure user session management**.  
+- Enabled integration of multiple **therapeutic tasks**:  
+  - Psychological scales on anxiety and COVID impact  
+  - Reading materials, video viewing, and audio listening  
+  - Multiple-choice and free‑text responses  
+  - Concept–definition matching tasks  
+- Focused on helping participants **identify priorities** in work, life, and relationships.  
+
+<details>
+<summary>📖 Read More</summary>
+
+**Problem:**  
+COVID‑19 created profound psychological challenges, increasing anxiety and distress, while **in‑person CBT and mindfulness sessions were unavailable or limited**. Researchers at CIBIT needed a flexible web platform to conduct a controlled study with experimental and control groups.
+
+**Solution:**  
+- Developed a **modular web application** using **Django**, serving personalized session flows.  
+- Implemented **dynamic task rendering**, allowing text, videos, and audios to be embedded within sessions.  
+- Built forms to capture responses for:  
+  - Standardized psychological scales,  
+  - Open‑ and closed‑ended questionnaires,  
+  - Matching tasks for reinforcing learning.  
+- Managed **user authentication and session tracking** to ensure controlled participation across multiple sessions.  
+- Designed the database schema to store participant progress, responses, and group assignments.  
+
+**Impact:**  
+- Enabled researchers to **deliver CBT and mindfulness interventions remotely** at scale.  
+- Supported a **controlled clinical study design** with separate participant vs. control sessions.  
+- Allowed nuanced data analysis of participant responses across task types.  
+- Provided a platform that could be **reused or extended** for future clinical psychology research projects.  
+
+**Figure — Session Flow Example**
+
+![COVMind Session Flow](figures/covmind/figure_session_flow.svg)
+*A session moves from psychological scales → guided text/video/audio → interactive tasks → reflection questions.*
+
+**Tech Stack:**  
+`Python · Django · JavaScript · HTML/CSS · Relational Database (PostgreSQL/MySQL) · User Authentication`
+
+</details>
+
+
 
 ---
 
@@ -366,7 +453,7 @@ Traditional documentation systems at CHUC relied on **free-text entries and stat
 
 ## 5. Skills 🛠️
 
-- **Programming & Frameworks:** Python, R, Elixir (Phoenix), Ruby (Rails), JavaScript, Java, SQL, ASP.NET MVC, HTML/CSS  
+- **Programming & Frameworks:** Python, R, Elixir (Phoenix, LiveView), Ruby (Rails), JavaScript, Java, SQL, ASP.NET MVC, HTML/CSS  
 - **AI & Machine Learning:** scikit-learn, Neo4j Graph Data Science  
 - **Healthcare & Data Standards:** HL7-CDA, SNOMED-CT  
 - **Databases & Data Engineering:** PostgreSQL, MySQL, Neo4j, relational & graph data modeling

@@ -227,7 +227,7 @@ Differentiating ASD and DD remains **challenging**, as both share overlapping cl
 
 ---
 
-### 3. CHUC Hospital — Digital Clinical Documentation 🏥
+### 2.2. CHUC Hospital — Digital Clinical Documentation 🏥
 
 *Design and implementation of structured clinical documentation using SNOMED-CT and HL7-CDA*
 
@@ -285,7 +285,7 @@ Traditional documentation systems at CHUC relied on **free-text entries and stat
 
 ---
 
-### 4. CHUC Hospital - Integration of Clinical Documentation with National Healthcare System (SClínico) 📝
+### 2.3. CHUC Hospital - Integration of Clinical Documentation with National Healthcare System (SClínico) 📝
 
 *Bridging structured digital documentation with the official hospital record system via HL7 and SNOMED-CT*
 
@@ -329,7 +329,7 @@ Although clinicians could fill clinical forms digitally (project 3), the lack of
 
 ---
 
-### COVMind — Remote CBT (Cognitive Behavioral Therapy)/Mindfulness Platform 🧘
+### 2.4. COVMind — Remote CBT (Cognitive Behavioral Therapy)/Mindfulness Platform 🧘
 
 *Supporting psychological well‑being during COVID‑19 through structured online therapy sessions*
 
@@ -366,23 +366,118 @@ COVID‑19 created profound psychological challenges, increasing anxiety and dis
 - Allowed nuanced data analysis of participant responses across task types.  
 - Provided a platform that could be **reused or extended** for future clinical psychology research projects.  
 
-**Figure — Session Flow Example**
+**Supporting Figures:**
 
 ![COVMind Session Flow](figures/covmind/figure_session_flow.svg)
-*A session moves from psychological scales → guided text/video/audio → interactive tasks → reflection questions.*
+*Session flow example: A session moves from psychological scales → guided text/video/audio → interactive tasks → reflection questions.*
 
 **Tech Stack:**  
 `Python · Django · JavaScript · HTML/CSS · Relational Database (PostgreSQL/MySQL) · User Authentication`
 
 </details>
 
+---
 
+### 2.5. CIMAGO — Data Science & ML in Genetic Cancer Research 🧪
+
+#### 2.5.1.CIMAGO — Genetic Data Integration Platform 🧬
+
+*Improving accessibility and traceability of CNV patient data for genomic research and clinical studies.*
+
+**Highlights:**
+- Collaboration with **CIMAGO (Centro de Investigação em Meio Ambiente, Genética e Oncobiologia)** in the context of research on **genetic cancer and neurodevelopmental diseases**.  
+- Developed a **LAMP (Linux, Apache, MySQL, PHP/JavaScript)** application to simplify data management for patient CNV reports generated via **Array‑CGH/Microarray** technologies.  
+- Provided a **secure, searchable web interface** enabling clinicians to:  
+  - Upload semi‑structured Excel/CSV spreadsheets from CNV analyses  
+  - Parse and standardize patient and variant information into a structured **MySQL relational database**  
+  - Query, filter, and visualize CNV information by patient, chromosome region, or gene  
+- Replaced a manual file‑based workflow with a **centralized, accessible data repository**, ensuring improved clinical traceability and data re‑use.  
+
+<details>
+<summary>🔬 Read More</summary>
+
+**Problem:**  
+Before the platform, clinicians and researchers stored dozens of Array‑CGH (microarray) result spreadsheets dispersed across computers.  
+This fragmentation made CNV data **hard to consult, compare, and maintain**, limiting the capacity for clinical follow‑up and scientific analysis.
+
+**Solution:**  
+- Designed a **relational database schema** optimized for CNV and patient metadata (individual identifiers, chromosomal location, variant type, annotations).  
+- Implemented automatic spreadsheet parsers to:  
+  - Validate and normalize file contents  
+  - Extract CNV fields  
+  - Load them into **MySQL tables** following defined relationships between patients, clinics, and variants.  
+- Built a **web portal** for data upload and exploration:  
+  - User authentication and permissions  
+  - Record search and filtering interface  
+  - Gene‑ and chromosome‑level visualization options  
+- Linked to **external genomic resources**, such as the **UCSC Genome Browser** and **GeneCards Human Gene Database**, enabling downstream analysis of candidate genes.  
+
+**Impact:**  
+- Consolidated disparate spreadsheet data into a single **searchable knowledge base**.  
+- Improved **clinical traceability** and data‑driven decision making.  
+- Built a foundation for future integration with **machine learning pipelines** in genotype–phenotype research.
+
+**Supporting Figures:**
+
+![Figure 1 — Entity‑Relationship Model](figures/cimago_rdb/entity_model.png)
+*Diagram showing the relational schema connecting patients, clinics, CNVs, and variant annotations. Each CNV record includes genomic coordinates, type (loss/gain), and reference gene information, linked to its respective clinic case and patient.*
+
+![Figure 2 — Researcher: View Clinic Case](figures/cimago_rdb/clinic_case_view.png)
+*Interface view showing a clinic case with full details and associated CNVs. If the researcher is assigned to the case, CNVs can be edited. For all users, “Show CNV Match” and “Show in UCSC” actions are available. Clicking on a gene name opens detailed gene information from the [GeneCards Human Gene Database](http://www.genecards.org).*
+
+**Tech Stack:**  
+`LAMP Stack (Linux · Apache · MySQL · PHP) · JavaScript · HTML5/CSS3 · Data Normalization · Secure Web Authentication`
+
+</details>
 
 ---
 
-### CIMAGO — Data Science & ML in Genetic Cancer Research 🧪
+#### 2.5.2. CIMAGO — Machine Learning in Oral Cancer Genomics 🔬
+
+*Applying data‑science and machine‑learning techniques to integrate genomic and epigenetic datasets in oral cancer research.*
+
+**Highlights**
+- Collaboration with the **Cytogenetics and Genomics Laboratory** at the **Faculty of Medicine, University of Coimbra**, through **CIMAGO (Centro de Investigação em Meio Ambiente, Genética e Oncobiologia)**.  
+- Worked alongside **PhD and MSc students**, including **Ilda Patrícia Ribeiro**, under the supervision of **Prof. Isabel Marques Carreira**, **Prof. Francisco Marques**, and **Prof. Joana Barbosa Melo**.  
+- Designed and implemented **machine‑learning workflows** to classify and cluster **oral squamous cell carcinoma (OSCC)** samples based on **genomic and epigenetic profiles**.  
+- Contributed to studies later published in international, peer‑reviewed journals.  
+
+<details>
+<summary>📘 Read More</summary>
+
+**Problem:**  
+Genomic and epigenetic data from OSCC projects were **heterogeneous, high‑dimensional**, and originated from multiple array‑based and molecular techniques.  
+Researchers needed a unified methodology to:  
+- Integrate heterogeneous CNV and expression datasets.  
+- Discover **patterns of genomic alteration** linked to tumor heterogeneity or progression.  
+- Perform **classification and clustering** with validated, reproducible preprocessing steps.
+
+
+**Solution:**  
+- Developed **data‑cleaning and normalization pipelines** to harmonize CNV and transcriptomic data.  
+- Prototyped and tuned **machine‑learning models** (classification & clustering) to explore tumor relationships and genomic signatures.  
+- Conducted **feature selection** and **exploratory data analysis** to identify recurrent genomic regions and candidate biomarkers.    
+- Collaborated closely with clinicians and students to validate model outcomes and interpret biologically meaningful features.
 
 ---
+
+**Impact:**  
+- Enabled **systematic analysis** of genomic and epigenetic alterations across OSCC samples and patient cases.  
+- Strengthened **data reproducibility and transparency** in ongoing research at CIMAGO.  
+- Directly contributed to publications in high‑impact journals, including:  
+  - Ribeiro IP et al. (2017) *Molecular Cytogenetics*. [DOI: 10.1186/s13039‑017‑0310‑z]  
+  - Ribeiro IP et al. (2016) *European Journal of Human Genetics*, 24(1): p279. (Q1 IF 4.580)  
+  - Carreira IM et al. (2016) *European Journal of Human Genetics*, 24(1): p295. (Q1 IF 4.580)  
+- Presented findings at the **5º Congresso da CIMAGO (2016)** — including studies on chromosomal gains/losses and genomic breakpoints in oral cancer.
+
+
+**Tech Stack**  
+`R · Ruby · Python · MySQL · LAMP Integration · Data Wrangling · Machine Learning (Classification & Clustering) · Exploratory Data Analysis · Genomic Feature Engineering`
+
+</details>
+
+---
+
 
 ## 3. Exploration Projects 🤖
 

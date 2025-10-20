@@ -535,7 +535,9 @@ Each row represents a blood‑pressure measurement characterized by its **SNOMED
 
 ![Figure 1 – Example of a Cardiac Record Entry](figures/hnotes/figure_cardiac_record.png)
 
-**Supplementary Video (S1)** – Live use‑case demonstration of data entry and interactive updates in hnotes (Phoenix LiveView interface).  [Watch on YouTube ▶️](https://youtu.be/D4lbiLlnmoc)
+**Supplementary Video (S1)** – Live use‑case demonstration of data entry and interactive updates in hnotes (Phoenix LiveView interface).  <a href="https://youtu.be/D4lbiLlnmoc" target="_blank" rel="noopener noreferrer">
+  Watch on YouTube ▶️
+</a>
 
 ---
 

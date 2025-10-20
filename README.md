@@ -2,14 +2,26 @@
 
 ## 1. About me
 
-👋 Hi, I’m André Ferreira Santos 
+👋 Hi, I’m **André Ferreira Santos**  
 
-**Biomedical Engineer | Data & AI Enthusiast | Transforming complexity into clarity with data, design & AI**  
+**Health Informatics Specialist · Biomedical Engineer · Researcher in Translational Neuroinformatics**  
+**Transforming complexity into clarity with data, design & AI**  
 
-I build standards-driven, user-centric tools that turn complex data into actionable insights.  
-Currently pursuing a PhD in Biomedical Engineering (Univ. of Coimbra), applying **graph analytics & ML to autism genetics**, while expanding into **AI/LLM applications** for real-world impact.  
+I build standards‑driven, user‑centric tools that turn complex data into actionable insights.  
+Currently pursuing a **PhD in Biomedical Engineering** (University of Coimbra), applying **graph analytics & machine learning to autism genetics**, while expanding into **LLM and AI applications** with real‑world clinical and research impact.  
 
-🌍 Passionate about open science, human-centric design, and digital transformation.  
+🌍 **Passionate about open science, human‑centric design, and digital transformation.** 
+
+---
+
+🎓 **Professional Certifications & Training**
+- 🧠 **Neo4j Certified Professional**, Neo4j Academy (2022)  
+- 📊 **Google Data Analytics Professional Certificate**, Google (2022)  
+- 🧩 **Neo4j Graph Data Science Certification**, Neo4j Academy (2024)  
+- 💬 **Advanced English Proficiency** – Reading, Writing & Speaking  
+
+🧘 **Personal Leadership & Well‑being Programs**
+- **SKY Leadership & Teacher Training Course**, *The Art of Living Foundation* (2023 – 2024) — focused on emotional intelligence, communication and team leadership.  
 
 ---
 
@@ -290,11 +302,13 @@ Traditional documentation systems at CHUC relied on **free-text entries and stat
 *Bridging structured digital documentation with the official hospital record system via HL7 and SNOMED-CT*
 
 **Highlights:**
-- Extended the **digital documentation system** (project 3) with **direct integration to SClínico Hospitalar**.  
+- Extended the **digital documentation system** (project 2.2.) with **direct integration to SClínico Hospitalar**.  
 - Eliminated the need for clinicians to manually duplicate information into SClínico medical summaries.  
 - Designed and implemented **HL7 message generation** from structured HL7-CDA + SNOMED-CT clinical documents.  
 - Developed **LIGHt (Local Interoperability Gateway for Healthcare) integration** for message delivery.  
-- Enabled clinicians to filter and **control which observations** are pushed into SClínico diaries, ensuring relevance and compliance.  
+- Enabled clinicians to filter and **control which observations** are pushed into SClínico diaries, ensuring relevance and compliance.
+- Introduced **dynamic UI modules** that detect user interactions (auto‑completion, field lock/unlock), improving ergonomics for clinicians.  
+- Created **observation‑filtering routines** ensuring only relevant SNOMED‑coded fields reach the official EHR.  
 
 <details>
 <summary>📖 Read More</summary>
@@ -314,7 +328,8 @@ Although clinicians could fill clinical forms digitally (project 3), the lack of
 **Impact:**  
 - Achieved **seamless integration** between the CHUC digital documentation platform and the official SClínico system.  
 - **Reduced duplication** and improved clinician adoption by streamlining workflows.  
-- Allowed clinicians to **retain control** over the granularity of information shared with SClínico.  
+- Allowed clinicians to **retain control** over the granularity of information shared with SClínico.
+- Enhanced workflow efficiency and information reliability for routine hospital use.  
 - Paved the way for expanding structured documentation to **routine hospital workflows** at scale.  
 
 **Supporting Figures:**  
@@ -614,14 +629,51 @@ Each row represents a blood‑pressure measurement characterized by its **SNOMED
 
 ## 5. Skills 🛠️
 
-- **Programming & Frameworks:** Python, R, Elixir (Phoenix, LiveView), Ruby (Rails), JavaScript, Java, SQL, ASP.NET MVC, HTML/CSS  
-- **AI & Machine Learning:** scikit-learn, Neo4j Graph Data Science  
-- **Healthcare & Data Standards:** HL7-CDA, SNOMED-CT  
-- **Databases & Data Engineering:** PostgreSQL, MySQL, Neo4j, relational & graph data modeling
+### Programming & Frameworks  
+`Python · R · Elixir (Phoenix, LiveView) · Ruby (Rails) · JavaScript · Java · SQL · ASP.NET MVC · HTML/CSS`
+
+### AI & Machine Learning  
+`scikit‑learn · Neo4j Graph Data Science · Exploratory Data Analysis · Feature Engineering · Data Preprocessing Pipelines`
+
+### Healthcare & Data Standards  
+`HL7‑CDA · HL7 v2 Messaging · SNOMED‑CT · Semantic Interoperability`
+
+### Databases & Data Engineering  
+`PostgreSQL · MySQL · Neo4j · Relational & Graph Modeling · ETL / Data Normalization`
+
+### Tools & Operating Environments  
+`Git · GitHub · Postman · Linux (LAMP stack) · Windows · XML · JSON · HTML · CSS`
 
 ---
 
 ## 6. Current Focus 🌱
+
+I am currently exploring two intersecting areas that connect my experience in data science and biomedical informatics with the emerging field of **Generative AI** and **narrative visualization**.
+
+---
+
+**🧠 Generative AI in Action — Amit Bahree (Manning Publications)**  
+Focusing on the **architectural patterns and deployment practices** of large language models (LLMs) and retrieval‑augmented generation (RAG).  
+My goal is to deepen my understanding of:  
+- How enterprise systems can integrate generative AI responsibly and efficiently.  
+- Refinement of **prompt‑engineering** workflows and **model adaptation/fine‑tuning**.  
+- Ethical and operational aspects such as transparency, hallucination mitigation, and scalable infra design.  
+[Read more →](https://www.manning.com/books/generative-ai-in-action){:target="_blank" rel="noopener noreferrer"}
+
+---
+
+**📊 Data Storytelling with Altair and AI — Angelica Lo Duca (Manning Publications)**  
+Exploring how **Python (Altair)** and **Generative AI tools** can elevate data comprehension through visual and narrative communication.  
+I am particularly interested in:  
+- Using **Altair’s declarative visualization grammar** to convey complex molecular and clinical datasets.  
+- Applying **AI‑assisted narrative generation** (e.g., text/image co‑generation) to transform findings into accessible insights.  
+- Structuring analyses around the **DIKW Pyramid (Data → Information → Knowledge → Wisdom)** to encourage clarity and impact.  
+[Read more →](https://www.manning.com/books/data-storytelling-with-altair-and-ai){:target="_blank" rel="noopener noreferrer"}
+
+---
+
+These themes align with my broader research direction:  
+building **interpretable, semantically‑robust AI systems** that not only analyze data but also **communicate results effectively** to humans.
 
 ---
 

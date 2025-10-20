@@ -481,7 +481,78 @@ Researchers needed a unified methodology to:
 
 ## 3. Exploration Projects 🤖
 
+### 3.1. HNotes — Semantic Health Data Capture Platform 🧠💾
+
+*A personal project and learning experiment developed in **Elixir/Phoenix LiveView** to explore semantic modeling of medical information.*
+
+**Highlights**
+- Built a **web‑based proof of concept** named **HNotes (Healthcare Notes)** allowing users to record and organize health data into **notes grouped inside notebooks**.  
+- Each note associates with an individual (*organism + identifier*) and contains structured health records defined through **SNOMED CT terminology**.  
+- Designed to ensure that each measurement is **semantically unambiguous**, enabling interoperability and potential data exchange with other health systems.  
+- Developed both **backend and frontend** (Elixir/Phoenix LiveView with Ecto for persistence).  
+- Includes example use‑cases such as **cardiac measurement entries (blood pressure records)** with SNOMED‑conformant components and attributes.
+
+<details>
+<summary>📘 Read More</summary>
+
+**Problem**  
+Traditional spreadsheet‑style or free‑text clinical note systems make it difficult to **interpret, integrate, or share** health records unambiguously between systems.  
+To achieve semantic consistency, each observation needs to describe *what was measured*, *the property observed*, *when*, *where/on what specimen*, *how it was quantified*, and *by which method* — information that most tools either oversimplify or ignore.  
+
+Clinicians and researchers require a **lightweight tool** capable of collecting structured health observations while maintaining **semantic interoperability** in accordance with **SNOMED CT**.
+
 ---
+
+**Solution**  
+- Designed and implemented **HNotes**, where each entry includes six fields corresponding to SNOMED CT‑defined concepts:  
+  1. **Component** – what was measured/observed  
+  2. **Property** – characteristic or attribute being described  
+  3. **Time** – interval of observation  
+  4. **System/Specimen** – biological system or tissue analyzed  
+  5. **Scale** – measurement scale (quantitative, ordinal, nominal)  
+  6. **Method** – technique or clinical procedure employed  
+- Constrained each field to **specific SNOMED CT subsets**, ensuring consistent term usage (e.g., Components from *Observed Entity*).  
+- Built the **LiveView front‑end** for dynamic, reactive data entry and **real‑time updates**.  
+- Structured data persistence through **Ecto + PostgreSQL/MySQL**, using strongly typed schema definitions.  
+- Implemented the concept of **notebooks** → **notes** → **registries**, organizing observations hierarchically.  
+- Developed an **example use case** for cardiovascular data capture, demonstrating component selection (“Systolic blood pressure”), unit (“mmHg”), and context (“Arterial system structure”).
+
+---
+
+**Impact**  
+- Demonstrates how **semantic encoding using SNOMED CT** can be incorporated in user‑friendly, real‑time web applications.  
+- Provides a **reusable data model** applicable to both clinical and research contexts without imposing profession‑based restrictions.  
+- Showcases **Elixir/Phoenix LiveView**’s capabilities for **interactive health data management** — rapid UI updates, parallel processing, and scalability across distributed nodes.  
+- Serves as a **learning platform** for combining semantic interoperability, functional programming, and modern web engineering.
+
+---
+
+**Supporting Figures**
+
+**Figure 1 – Example of a Cardiac Record Entry**  
+Interface of the *HNotes* prototype showing a notebook with a clinical note and associated health registries.  
+Each row represents a blood‑pressure measurement characterized by its **SNOMED CT fields** (Component, Property, Time, System, Scale, Method) and corresponding value.  
+
+![Figure 1 – Example of a Cardiac Record Entry](figures/hnotes/figure_cardiac_record.png)
+
+**Supplementary Video (S1)** – Live use‑case demonstration of data entry and interactive updates in hnotes (Phoenix LiveView interface).  [Watch on YouTube ▶️][(https://img.youtube.com/vi/D4lbiLlnmoc/hqdefault.jpg)](https://youtu.be/D4lbiLlnmoc)
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/D4lbiLlnmoc"
+  title="HNotes – LiveView use case demonstration"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+---
+
+**Tech Stack**  
+`Elixir · Phoenix Framework (LiveView) · Ecto · PostgreSQL/MySQL · SNOMED CT Terminology · Semantic Web Modeling · HTML5/CSS3`
+
+</details>
+
+---
+
 
 ## 4. Publications 📚
 

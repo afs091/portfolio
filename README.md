@@ -8,7 +8,7 @@
 **Transforming complexity into clarity with data, design & AI**  
 
 I build standards‑driven, user‑centric tools that turn complex data into actionable insights.  
-Currently pursuing a **PhD in Biomedical Engineering** (University of Coimbra), applying **graph analytics & machine learning to autism genetics**, while expanding into **LLM and AI applications** with real‑world clinical and research impact.  
+**PhD in Biomedical Engineering** (University of Coimbra, 2026 — *Aprovado com Distinção e Louvor*), applying **graph analytics & machine learning to autism genetics**, while expanding into **LLM and AI applications** with real‑world clinical and research impact.  
 
 🌍 **Passionate about open science, human‑centric design, and digital transformation.** 
 
@@ -32,6 +32,8 @@ Currently pursuing a **PhD in Biomedical Engineering** (University of 
 
 **Integrating relational databases, graph theory & machine learning to decode dopaminergic and serotonergic mechanisms in autism and developmental delay.**
 
+🎓 **PhD awarded, June 2026** — *Aprovado com Distinção e Louvor* (18.300/20), the highest grade in the Portuguese doctoral system. The thesis's best result — an **88.6% accuracy** classifying ASD vs. Developmental Delay from a combined dopaminergic + serotonergic network — surpasses DSM‑5 diagnostic sensitivity for children under 7 (78%) by **+8 percentage points**, using only genetic data already available from standard clinical microarray (CMA) workflows.
+
 #### 2.1.1. From Unstructured Data to Relational and Graph Databases
 
 *Relational and Graph Databases for Neurodevelopmental Genetics Using SFARI Gene CNV Data*
@@ -39,7 +41,7 @@ Currently pursuing a **PhD in Biomedical Engineering** (University of 
 **Highlights:**
 - Transformed raw SFARI CNV text files into **analysis-ready relational & graph databases**.
 - Produced **+68k patient–CNV associations across +28k individuals**.
-- Released as **open science resource** (800+ downloads) for reuse in genetic and network analyses.
+- Released as **open science resource** (1,300+ downloads) for reuse in genetic and network analyses.
 
 <details>
 <summary>📖 Read More</summary>
@@ -61,7 +63,7 @@ We designed a **structured ETL workflow** to transform SFARI CNV data into query
 - Generated a **knowledge base of 68,811 patient–CNV associations** mapped across 28,717 individuals.
 - Enabled **hypothesis generation** and efficient queries of patterns previously hidden in unstructured text.
 - Created a **modular framework** extendable to external omics datasets (e.g., transcriptomics, proteomics).
-- Contributed an **open science resource** used by the community (800+ downloads). 
+- Contributed an **open science resource** used by the community (1,300+ downloads). 
 
 **Supporting Figures:**
 
@@ -158,7 +160,7 @@ ASD and DD are **multifactorial disorders** with **highly heterogeneous genetic 
 - Constructed a **graph database** linking participants → dopamine genes → GO terms.  
 - Computed pairwise participant similarity vectors based on gene and/or GO features.  
 - Built three similarity networks: **gs, gos, ggos**.  
-- Extracted node-level features via **centrality** & **graph embeddings (node2vec)**.  
+- Extracted node-level features via **centrality** & **graph embeddings (FastRP)**.  
 - Trained **Random Forest classifiers** with 5-fold CV to predict ASD vs DD.  
 
 **Impact:**  
@@ -185,7 +187,7 @@ ASD and DD are **multifactorial disorders** with **highly heterogeneous genetic 
 *ML pipeline aproach using Graph-Native ML*  
 
 **Tech Stack:**  
-`Python · Neo4j Graph Data Science (GDS)  · Gephi · node2vec (graph embeddings) · Random Forests`
+`Python · Neo4j Graph Data Science (GDS)  · Gephi · FastRP (graph embeddings) · Random Forests`
 
 </details>
 
@@ -563,6 +565,43 @@ Each row represents a blood‑pressure measurement characterized by its **SNOMED
 
 ---
 
+
+### 3.2. LLM Wiki — AI-Assisted Knowledge Management 🧠📚
+
+*Structured, source-linked research wikis built and maintained collaboratively with Claude Code, governed by standing `CLAUDE.md` instruction sets.*
+
+**Highlights:**
+- Designed a repeatable **ingest → discuss → write → link → index → log** workflow that turns raw source material into a persistent, cross-referenced markdown wiki instead of a lost chat history.
+- Built and maintained three instances: a **20+ page PhD defence wiki**, a **19-page EU competition (EPSO AD7) exam-prep wiki**, and **Forge**, a 26-page meta-wiki comparing multiple AI-assisted development methodologies.
+- Extended the base workflow with domain-specific output templates baked into `CLAUDE.md` (e.g. fixed MCQ and EUFTE-briefing formats for exam prep), and, in Forge, converted synthesized knowledge into reusable `CLAUDE.md` templates and project scaffolds for downstream projects.
+
+<details>
+<summary>📖 Read More</summary>
+
+**Problem:**
+
+Ad-hoc chats with an AI assistant lose their context and structure once the conversation ends, making it hard to accumulate knowledge across sessions or reuse it for a high-stakes, long-running goal (a thesis defence, a competitive exam, an evolving methodology).
+
+**Solution:**
+
+- Authored a `CLAUDE.md` file per project giving Claude standing instructions: how to ingest a new source, where it belongs in the wiki, how to cross-link and cite it, and how to keep a master index and append-only log.
+- Workflow: drop a source into `raw/` → Claude reads and discusses key takeaways → Claude creates/updates wiki pages with cross-links → index and log are updated → periodic lint/audit passes catch orphan pages, dead links, and contradictions.
+- Adapted the same base method to three different domains, each adding domain-specific structure on top: jury-profile and anticipated-question pages for a PhD defence, legislation/policy pages plus exam-format templates for an EU competition, and author/concept/tool/synthesis pages comparing four named AI-dev methodologies for Forge.
+
+**Impact:**
+
+- **PhD Defence Wiki** (2025–2026): 20+ pages across thesis methodology, results, jury profiles, and literature, built from 15+ sources; contributed to a thesis defence awarded *Aprovado com Distinção e Louvor* (18.300/20).
+- **EPSO AD/426/25 Competition Prep Wiki** (2026, in progress): 19 pages covering EU data-protection and digital-policy legislation across 22 source documents, plus a 25-question MCQ practice bank and draft EUFTE briefings generated from exam-specific templates embedded in `CLAUDE.md`.
+- **Forge** (2026–present): a meta-wiki cross-comparing four AI-assisted development methodologies (Karpathy's LLM Wiki, Van Clief's Interpretable Context Methodology, Kahler's PAUL/SEED ecosystem, GSD's spec-driven approach) across 26 pages and 15 sources, converting the synthesis into reusable `CLAUDE.md` templates and project scaffolds rather than stopping at reference notes.
+- Demonstrates a workflow that scales from single-domain knowledge capture to comparative, cross-framework synthesis — and from organizing source material to designing the governing instruction-set architecture itself.
+
+**Tech Stack:**
+
+`Claude Code · Markdown · Structured CLAUDE.md instruction sets · Git`
+
+</details>
+
+---
 
 ## 4. Publications 📚
 

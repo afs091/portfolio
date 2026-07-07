@@ -620,6 +620,11 @@ Ad-hoc chats with an AI assistant lose their context and structure once the conv
   **Healthcare**, 11(7), 973, 2023.  
   👉 [https://doi.org/10.3390/healthcare11070973](https://doi.org/10.3390/healthcare11070973)  
 
+- **Santos, A.**, Caramelo, F., Barbosa Melo, J., et al.  
+  *Network analysis of serotonin CNVs shows biological convergence from genetic heterogeneity and discriminates between autism and developmental delay*.  
+  **Scientific Reports**, 2026.  
+  👉 [https://doi.org/10.1038/s41598-026-54264-y](https://doi.org/10.1038/s41598-026-54264-y)
+
 
 
 <details>
@@ -658,6 +663,15 @@ Ad-hoc chats with an AI assistant lose their context and structure once the conv
   pages     = {973},
   doi       = {10.3390/healthcare11070973},
   publisher = {MDPI}
+}
+
+@article{Santos2026Serotonin,
+  author    = {Santos, André and Caramelo, Francisco and Barbosa Melo, Joana and others},
+  title     = {Network analysis of serotonin CNVs shows biological convergence from genetic heterogeneity and discriminates between autism and developmental delay},
+  journal   = {Scientific Reports},
+  year      = {2026},
+  doi       = {10.1038/s41598-026-54264-y},
+  publisher = {Nature Publishing Group}
 }
 ```
 </details>

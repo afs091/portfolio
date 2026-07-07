@@ -32,7 +32,7 @@ I build standards‑driven, user‑centric tools that turn complex data into act
 
 **Integrating relational databases, graph theory & machine learning to decode dopaminergic and serotonergic mechanisms in autism and developmental delay.**
 
-🎓 **PhD awarded, June 2026** — *Aprovado com Distinção e Louvor* (18.300/20), the highest grade in the Portuguese doctoral system. The thesis's best result — an **88.6% accuracy** classifying ASD vs. Developmental Delay from a combined dopaminergic + serotonergic network — surpasses DSM‑5 diagnostic sensitivity for children under 7 (78%) by **+8 percentage points**, using only genetic data already available from standard clinical microarray (CMA) workflows.
+🎓 **PhD awarded, June 2026**. The thesis's best result — an **88.6% accuracy** classifying ASD vs. Developmental Delay from a combined dopaminergic + serotonergic network — surpasses DSM‑5 diagnostic sensitivity for children under 7 (78%) by **+8 percentage points**, using only genetic data already available from standard clinical microarray (CMA) workflows.
 
 #### 2.1.1. From Unstructured Data to Relational and Graph Databases
 
